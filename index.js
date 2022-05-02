@@ -15,10 +15,10 @@ const myNode = axios.create({
 
 const getInfo = async () => {
   try {
-    let res = await myNode.post('/v1/getisfo')
+    let res = await myNode.post('/v1/getinfo')
     return res
   } catch(err) {
-    console.error(error.repsonse)
+    console.error(err.repsonse)
   }
 }
 
@@ -58,7 +58,7 @@ const isSettled = async (r_hash) => {
 
 const run = async () => {
   /* Get information of the lightning node */
-  const res = getInfo()
+  const res = await getInfo()
 
   /* Pay an invoice generated elsewhere */ 
   // const invoice = process.argv[2]
