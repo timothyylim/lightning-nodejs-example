@@ -1,7 +1,7 @@
 const fs = require('fs')
-
-let axios = require('axios')
 const https = require('https')
+
+const axios = require('axios')
 
 const macaroon = fs.readFileSync('./admin.macaroon').toString('hex')
 
@@ -75,9 +75,3 @@ const run = async () => {
 }
 
 run()
-
-
-
-// lnbc24900n1p39je2npp56nky6ncke86fltjcruaq2phgn0agqkz5nc7u56ul5xa02wkhtgjsdqqcqzzgxqyz5vqrzjqw8c7yfutqqy3kz8662fxutjvef7q2ujsxtt45csu0k688lkzu3ldcccda4dcenf5gqqqqryqqqqthqqpysp5jgjhudvh6ptjlt94g7zvcxdzwfvn7zckvy9vxj725ltr2l0awuxq9qypqsqm5l9m794xgpglsvf7pk4nkn4zzzwq7z7ph070hxyzjvf947n0cgkmmggar4l8sr9s3ttqlz26js64fpz2gpevnfv4ke5nh7ydkwmt2gpzz8w33
-// d4ec4d4f16c9f49fae581f3a0506e89bfa8058549e3dca6b9fa1baf53ad75a25
-// p89HSZZXUuviPvZTjYvFhFtCq5KoIJv/KyOqCoT7c7k
